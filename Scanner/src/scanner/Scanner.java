@@ -20,18 +20,30 @@ public class Scanner {
         String rpta="s";
         while(rpta.equals("s")){
 
-            System.out.println("Ingrese documento");
+            System.out.println("Ingrese  tipo de documento ");
+            String tipodoc=sc.nextLine();
+            
+             System.out.println("Ingrese documento ");
             String numdoc=sc.nextLine();
-            System.out.println("Ingrese nombre");
+            
+            
+            System.out.println("Ingrese nombre ");
             String nombre=sc.nextLine();
+            
             System.out.println("Ingrese nivel socioeconomico");
             String nivsocio=sc.nextLine();
+         
             System.out.println("ingrese beca");
             String beca=sc.nextLine();
 
-            Alumno e1 =new Alumno("beca");
+            Alumno e1 =new Alumno("");
 
+            
+            e1.setTipodoc(tipodoc);
+            e1.setNumdoc(numdoc);
             e1.setNombre(nombre);
+            e1.setNivsocio(nivsocio);
+            e1.setBeca(beca);
             
             System.out.println("Los datos del alumno creado son:");
             e1.verDatos();
@@ -39,6 +51,16 @@ public class Scanner {
             //control.agregaralumnos(e1);
             //System.out.println("Desea agregar más estudiantes: s/n");
             //rpta=sc.nextLine();
+             try {
+             String codigo=sc.nextLine();
+             if (codigo.isEmpty()){
+                 throw new Exception();
+             }
+        }
+        catch (Exception a) {
+            System.out.println("no puedes dejar el codigo vacio"
+                    + "");            
+        }
         }
     }
     

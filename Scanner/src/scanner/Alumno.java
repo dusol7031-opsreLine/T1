@@ -60,9 +60,9 @@ public class Alumno {
     }
      public void verDatos(){
         System.out.println("tipo de docuumento del alumno: "+this.tipodoc + 
-                "indique el numero de documento: "+this.numdoc+"indique el"
-                        + " nivelsocioeconomico:"+this.nivsocio+
-                "indique la beca: "+this.beca);
+                " indique el numero de documento: " +this.numdoc+ " indique el "
+                        + " nivelsocioeconomico: "+this.nivsocio+
+                " indique la beca: "+this.beca);
     }
     
     
