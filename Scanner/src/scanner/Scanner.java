@@ -58,8 +58,8 @@ public class Scanner {
              }
         }
         catch (Exception a) {
-            System.out.println("no puedes dejar el codigo vacio"
-                    + "");            
+            System.out.println("no puedes dejar el codigo vacio");
+                                
         }
         }
     }
