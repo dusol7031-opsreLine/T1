@@ -15,6 +15,31 @@ public class Scanner {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+         java.util.Scanner sc = new java.util.Scanner(System.in);
+        AlumnoControlador AlumnoControlador = new AlumnoControlador();
+        String rpta="s";
+        while(rpta.equals("s")){
+
+            System.out.println("Ingrese documento");
+            String numdoc=sc.nextLine();
+            System.out.println("Ingrese nombre");
+            String nombre=sc.nextLine();
+            System.out.println("Ingrese nivel socioeconomico");
+            String nivsocio=sc.nextLine();
+            System.out.println("ingrese beca");
+            String beca=sc.nextLine();
+
+            Alumno e1 =new Alumno("beca");
+
+            e1.setNombre(nombre);
+            
+            System.out.println("Los datos del alumno creado son:");
+            e1.verDatos();
+
+            //control.agregaralumnos(e1);
+            //System.out.println("Desea agregar más estudiantes: s/n");
+            //rpta=sc.nextLine();
+        }
     }
     
 }
