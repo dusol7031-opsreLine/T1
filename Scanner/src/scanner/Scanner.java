@@ -52,8 +52,8 @@ public class Scanner {
             //System.out.println("Desea agregar más estudiantes: s/n");
             //rpta=sc.nextLine();
              try {
-             String codigo=sc.nextLine();
-             if (codigo.isEmpty()){
+             String Alumno=sc.nextLine();
+             if (Alumno.isEmpty()){
                  throw new Exception();
              }
         }

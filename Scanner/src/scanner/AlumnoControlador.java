@@ -26,5 +26,17 @@ public class AlumnoControlador {
             es.verDatos();
         }
     }
+     public void errores() {
+         try {
+             String Alumno=sc.nextLine();
+             if (Alumno.isEmpty()){
+                 throw new Exception();
+             }
+        }
+        catch (Exception a) {
+            System.out.println("no puedes dejar el codigo vacio"
+                    + "");            
+        }
+}
     
 }
